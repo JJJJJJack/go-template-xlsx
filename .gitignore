@@ -9,3 +9,4 @@ report-template*
 cmd/
 assets/
 dist
+makefile
