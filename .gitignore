@@ -1,0 +1,9 @@
+*.xlsx
+*.json
+.DS_Store
+.~lock*
+output*
+report-template*
+*.exe
+cmd/
+assets/
