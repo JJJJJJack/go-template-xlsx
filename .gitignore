@@ -2,6 +2,7 @@
 *.json
 .DS_Store
 .~lock*
+input*
 output*
 report-template*
 *.exe
