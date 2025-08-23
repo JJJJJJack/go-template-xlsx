@@ -159,12 +159,13 @@ func (xt *XlsxTemplate) Apply(templateValues any) error {
 	return nil
 }
 
-// Save saves the modified XLSX file to the specified filename.
+// Save saves the modified xlsx file to the specified filename.
 func (xt *XlsxTemplate) Save(filename string) error {
 	return os.WriteFile(filename, xt.output.Bytes(), 0644)
 }
 
-// Bytes returns the modified XLSX file as a byte slice.
-func (xt *XlsxTemplate) Bytes() ([]byte, error) {
-	return xt.output.Bytes(), nil
+// Bytes returns the modified xlsx file as a byte slice.
+// (empty if Apply was not used).
+func (xt *XlsxTemplate) Bytes() []byte {
+	return xt.output.Bytes()
 }
